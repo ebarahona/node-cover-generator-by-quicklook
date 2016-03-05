@@ -20,7 +20,6 @@
     function ecql() { }
 
     /*
-     TODO eigenes Modul  cover-generator-by-quicklook
 
      qlmanage -o . -t -s 600 "/Users/marc/ebooks/Romane/_todo/neu/Eigentlich ist mein Leben gar n - Chris Nolde.epub"
      && sips -s format jpeg "/Users/marc/ebooks/Romane/_todo/neu/Eigentlich ist mein Leben gar n - Chris Nolde.epub.png" --out .
@@ -90,7 +89,7 @@
             ' && mv "' + tempFile2 + '" "' + targetFile + '"';
 
         fs.access(targetFile, fs.R_OK, function(err) {
-            if (err /* file does'nt exist */ || options.forceOverwrite) {
+            if (err /* file does'nt exists */ || options.forceOverwrite) {
                 exec(cmd, function (error, stdout, stderr) {
                     if (error) console.error(error, cmd);
                     if (stdout) console.info('Created: ', targetFile);
@@ -101,46 +100,6 @@
                 callback();
             }
         });
-
     }
-
-
-    //// Test:
-    //function test1() {
-    //    var options = {
-    //        forceOverwrite: true,
-    //        outputs: [
-    //            {nameExtension: "", size: 300},     // abc.cbr -> abc.jpg
-    //            {nameExtension: "_xl", size: 1200}  // abc.cbr -> abc_xl.jpg
-    //            //{nameExtension: "_o", size: null}   // abc.cbr -> abc_o.jpg, original size.
-    //        ],
-    //        tmpDir: '/Volumes/ramdisk/tmp'
-    //    };
-    //    var sourceFile = "/Volumes/2TB/jdownload/___x/Eigentlich ist mein Leben gar n - Chris Nolde.epub";
-    //    createThumbForFile(sourceFile, options);
-    //    async.waterfall(todos, function (err, result) {
-    //        if (err) console.error(err);
-    //        console.info('Outputs created:', todos.length);
-    //        // all done.
-    //    });
-    //}
-    //
-    //function test2() {
-    //    var options = {
-    //        forceOverwrite: true,
-    //        outputs: [
-    //            {nameExtension: "", size: 300},     // abc.cbr -> abc.jpg
-    //            {nameExtension: "_xl", size: 1200}  // abc.cbr -> abc_xl.jpg
-    //            //{nameExtension: "_o", size: null} // abc.cbr -> abc_o.jpg, original size.
-    //        ],
-    //        tmpDir: '/Volumes/ramdisk/tmp'
-    //    };
-    //    extractCoverGlob("/Volumes/2TB/jdownload/___x/**/*.epub", options, function(err){
-    //        console.info('All done. :-)');
-    //    });
-    //
-    //}
-    //
-    //test2();
 
 })();

@@ -52,7 +52,6 @@ ecql.extractCoverGlob(
     console.info('Done.');
 });
 ```
-
 Information about glob file pattern can be found here: [Glob Primer](www.npmjs.com/package/glob#glob-primer).
 
 ### Options
