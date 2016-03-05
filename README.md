@@ -67,11 +67,11 @@ Sample for option.outputs:
 ```js
 outputs:[
     // abc.cbr -> abc.jpg
-    {nameExtension: "", dimension: [200, 300]},   
+    {nameExtension: "", size: 300},   
     // abc.cbr -> abc_xl.jpg
-    {nameExtension: "_xl", dimension: [800, 1200]}, 
+    {nameExtension: "_xl", size: 1200}, 
     // original size. abc.cbr -> abc_o.jpg
-    {nameExtension: "_o", dimension: null}          
+    {nameExtension: "_o", size: null}          
 ]
 // dimension: [width, height]} . a wildcard is not possible at the moment.
 ```

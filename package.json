@@ -1,6 +1,6 @@
 {
   "name": "cover-generator-by-quicklook",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Mac OS X only! Extracts the first view (cover) of an document (PDF, iWork documents, Microsoft Office documents, epub, CBr, CBZ, C7...) in different sizes",
   "os" : [ "darwin" ],
   "keywords": [
