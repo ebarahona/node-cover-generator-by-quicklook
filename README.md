@@ -9,7 +9,8 @@ It's possible to generate several outputs in several dimensions for a given ducu
 ## Getting started
 
 ### Quick Look
-This tool uses the [unpack-all](https://en.m.wikipedia.org/wiki/Quick_Look) and it's command tool [qlmanage](https://www.google.de/search?q=generator+by&oq=generator+by&aqs=chrome..69i57j0l5.2758j0j7&sourceid=chrome&ie=UTF-8). 
+This tool uses the [Quick Look](https://en.m.wikipedia.org/wiki/Quick_Look) and it's command tool [qlmanage](https://www.google.de/search?q=generator+by&oq=generator+by&aqs=chrome..69i57j0l5.2758j0j7&sourceid=chrome&ie=UTF-8). 
+(Quick Look is a quick preview feature developed by Apple Inc. which was introduced in its operating system, Mac OS X 10.5 Leopard.)
 
 Type "qlmanage -m" in the command line (terminal, shell) to see the installed Quick Look plugins.
 Additional plugins can be installed: I recommend [Simple Comic](https://en.wikipedia.org/wiki/Simple_Comic) for comics. 
