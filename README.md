@@ -20,7 +20,7 @@ Information about more Quick Look plugins can be found here: [QuickLook Plugins 
 
 ### Example: Single File
 ```js
-var ecql = require('./../index.js');
+var ecql = require('cover-generator-by-quicklook');
 
 ecql.extractCover(
     '/Volumes/2TB/jdownload/Eigentlich ist mein Leben gar n - Chris Nolde.epub', {
@@ -37,7 +37,7 @@ ecql.extractCover(
 ```
 ### Example: Glob
 ```js
-var ecql = require('./../index.js');
+var ecql = require('cover-generator-by-quicklook');
 
 ecql.extractCoverGlob(
     '/Volumes/2TB/jdownload/___x/**/*.+(epub|cb*|pdf)', {
