@@ -72,6 +72,5 @@ outputs:[
     // original size. abc.cbr -> abc_o.jpg
     {nameExtension: "_o", size: null}          
 ]
-// dimension: [width, height]} . a wildcard is not possible at the moment.
 ```
 
